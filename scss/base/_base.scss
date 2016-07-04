@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @extend %reset_sizing;
+    text-align: center;
+    font-family: $main-font;
+    color: $text-color;
+    background: $main-background-color;
+}
+
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: $link-color;
+      &:hover {
+          color: #9968FF;
+      }
+}
+
+.main-nav li:hover,
+.profile-image:hover,
+.portfolio img:hover,
+.skills img:hover {
+    transform: scale(1.1);
+}
+
+.bottom-nav {
+    display: none;
+    @include media(tablet) {
+        @include flex-display(flex, row, space-between);
+    }
+
+    & li{
+        @include media(tablet) {
+              margin:  $auto;
+          }
+        }
+    & a {
+          @include media(tablet) {
+              margin:  20px 10px;
+          }
+        }
+}

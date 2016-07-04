@@ -1,0 +1,31 @@
+
+
+.intro {
+	@include flex-display(flex, column, $width: $full, $max-width: 1150px,$align:center);
+	@extend %head_padding;
+    @include media(tablet) {
+        display: inline-block;
+        margin: auto;
+        width: 90%;
+    }
+}
+
+.main-header {
+	@include flex-display(flex, column, $width: $full, $max-width: 1150px, $align:center);
+    @extend %head_padding;
+    @include media(laptop){
+        @include flex-display(flex,row,space-between,90%);
+        margin: $auto;
+        }
+
+}
+
+.contact {
+	@include flex-display(flex, column, $width: $full, $max-width: 1150px, $align:center);
+    @extend %container-width;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: $border;
+}
+
+

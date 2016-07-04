@@ -1,0 +1,19 @@
+#hide-anchor {
+	margin:auto 0;
+		@include media(tablet){
+            display: none;
+            }
+    }
+
+footer{
+   @include flex-display(flex,row,space-between,90%);
+   margin: $auto;
+	   h3{
+	   	color:$text-black;
+	     }
+   		ul{
+   			li:last-child a{
+   					margin-right: 0;
+   		  					}
+   		}
+ }

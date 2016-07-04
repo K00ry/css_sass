@@ -1,0 +1,52 @@
+
+
+nav{
+  display: none;
+  width:80%;
+  margin:auto;
+  @include media (tablet){
+        @include flex-display(flex,row,space-around,80%);  
+      }
+      @include media (laptop){
+        width: 50%;
+        margin: 0;
+      }
+    .main-nav {
+        @include media (tablet){
+        @include flex-display(flex,row,space-around,100%);  
+      }
+    }      
+
+}  
+
+.main-nav li {
+            @include font-fam-size (18px,$main-font,bold,$text-color);
+            @extend %list-style;
+            @extend %box-shadow;
+            
+            @include media (tablet){
+            margin-right: 15px;
+            width: 300px;
+            transition: all .5s;
+            }
+            &:hover{
+              text-shadow: $text-shadow;
+            }
+
+            & a {
+               color: $link-color-light;
+               margin: $auto;
+               line-height: 1.8;
+               cursor: pointer;
+              }
+            &:last-child{
+                @include media (tablet){
+                 margin-right: 0;
+                  }
+
+            }
+
+       }
+
+
+

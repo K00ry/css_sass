@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kourosh Mirzaei's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/application.css">
+    <link href='https://fonts.googleapis.com/css?family=Limelight|Julius+Sans+One|Poiret+One' rel='stylesheet' type='text/css'>
+    <script src="js/picturefill.min.js" async></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="name" id="top">Kourosh Mirzaei</h1>
+        <div class="toggle-nav"><a href="#">MENU</a><a href="#">&#9776;</a></div>
+        <nav class="nav">
+            <ul class="main-nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="intro">
+        <div class="profile">
+            <img src="images/koory-profile.jpg" alt="Picture of Kourosh Mirzai" srcset="images/koory-profile.jpg 2x,
+		images/koory-profile-lower.jpg 1x" class="profile-image">
+        </div>
+        <div class="bio">
+            <p>I'm a front-end developer who loves responsive design and css. I got my degree in front-end web development at Treehouse and am excited to deliver all the expections using my skills.</p>
+        </div>
+    </div>
+    <main class="main-content">
+        <h1 id="portfolio">PORTFOLIO</h1>
+        <ul class="portfolio">
+            <li>
+                <img src="images/portfolio-1.png" alt="portfolio image" class="port-img">
+                <h2>Marketing Page</h2>
+                <p>this project shows the front page of amarketing website meant for specific buisiness I'm interested in.</p>
+            </li>
+            <li>
+                <img src="images/portfolio-2.png" alt="portfolio image" class="port-img">
+                <h2>Search Page</h2>
+                <p>this project searches through a specific database to find information that the user is trying to look up.</p>
+            </li>
+            <li>
+                <img src="images/portfolio-3.png" alt="portfolio image" class="port-img">
+                <h2>Travel App</h2>
+                <p>this project searches through a specific database to find information that the user is trying to look up.</p>
+            </li>
+            <li>
+                <img src="images/portfolio-6.png" alt="portfolio image" class="port-img">
+                <h2>Map of Favorite Spots</h2>
+                <p>This project uses mapping apis to plot points for my faviorite spots in the city for a do-it-yourself walking tour.</p>
+            </li>
+            <li>
+                <img src="images/portfolio-5.png" alt="portfolio image" class="port-img">
+                <h2>Photo Gallery</h2>
+                <p>This project shows pictures from a recent trip to viewer and allows them to easily navigate through photos.</p>
+            </li>
+            <li>
+                <img src="images/portfolio-6.png" alt="portfolio image" class="port-img">
+                <h2>Calculator</h2>
+                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+            </li>
+        </ul>
+        <h1 id="skills">Skills</h1>
+        <ul class="skills">
+            <li>
+                <img src="images/portfolio-7.png" alt="skill image" class="port-img">
+                <h2>Video Player</h2>
+            </li>
+            <li>
+                <img src="images/portfolio-8.png" alt="skill image" class="port-img">
+                <h2>video Blog</h2>
+            </li>
+            <li>
+                <img src="images/portfolio-9.png" alt="skill image" class="port-img">
+                <h2>Forms</h2>
+            </li>
+            <li>
+                <img src="images/portfolio-10.png" alt="skill image" class="port-img">
+                <h2>Responsive Design</h2>
+            </li>
+        </ul>
+    </main>
+    <div id="contact">
+        <div class="contact">
+            <h2>CONTACT</h2>
+            <p>Please dont hesitate to contact me , I would be happy to provide more information about my work.</p>
+            <h4>Phone  : <a href="tel:+1917-414-6858">(917)414-6858</a></h4>
+            <h4>Email  : <a href="mailto:koory.yellow@gmail.com">koory.yellow@gmail.com</a></h4>
+        </div>
+    </div>
+    <footer>
+        <h3>Kourosh Mirzaei</h3>
+        <ul class="bottom-nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <a id="hide-anchor" href="#top">Back to top</a>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+$(".toggle-nav").click(function(e) {
+    e.preventDefault();
+    
+    $(".nav").toggle("slow");
+});
+</script>
+
+</html>

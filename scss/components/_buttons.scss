@@ -1,0 +1,20 @@
+.toggle-nav{
+  @include flex-display(flex,row,space-between,80%);
+  @extend %list-style;
+  @extend %box-shadow; 
+    
+      @include media (tablet){
+      display:none;
+      }
+
+      & a {
+        color: $text-color;
+        font-size: 18px;
+      }
+      & :first-child {
+        margin: $auto;
+      }
+      & :last-child {
+        margin: $auto 0;
+      }   
+} 

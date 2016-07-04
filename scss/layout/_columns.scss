@@ -1,0 +1,69 @@
+.main-content {
+    @include flex-display(flex, column, $width: $full, $max-width: 1150px);
+    align-items: center;
+    padding: 40px 0;
+    background-color: $main-content-color;
+    @extend %box-shadow;
+
+    @include media(laptop){
+        width: 90%;
+        margin: $auto;
+    }
+
+}
+
+.portfolio {
+    @extend %reset_sizing;
+    @extend %container-width;
+    border-bottom: $border;
+    @include media(tablet) {
+        @include flex-display(flex, row, space-between);
+        flex-wrap: wrap;
+    }
+    & p {
+        @include font-fam-size ($sm-font,$p-font,$font-w,$h-color);
+        margin: 40px 0;
+        @include media(tablet) {
+            width: 80%;
+            margin: $auto;
+            margin-bottom: 15px;
+        } 
+    }
+    & li {
+        
+        @include media(tablet){
+            width: 50%;
+        }
+        @include media(laptop){
+            width: 33%;
+        }
+
+    }
+}
+
+
+
+.port-img {
+    @extend %reset_sizing;
+    @extend %container-width;
+}
+
+.skills {
+    @extend %reset_sizing;
+    @extend %container-width;
+    @include media(tablet){
+        @include flex-display(flex, row, space-between);
+        flex-wrap: wrap;
+    }
+    & li {
+        @include media(tablet){
+            width: 50%;
+        }
+        @include media(laptop){
+            width: 33%;
+        }
+       
+    }
+}
+
+

@@ -1,0 +1,32 @@
+// padding for head and intro//
+%head_padding {
+    padding-bottom: 40px;
+}
+
+// reseting paddings and margins and transitions for 0.5 //
+%reset_sizing {
+    padding: 0;
+    margin: 0;
+    transition: all .5s;
+}
+
+// width for containers  //
+%container-width {
+    width: 90%;
+    margin: auto;
+}
+
+// box shadow \\
+
+%box-shadow {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+// list item styling \\
+
+%list-style{	
+    margin: 10px 0;
+    background-color: $nav-li-color;
+    height: 30px;
+    padding: 0 10px;
+}

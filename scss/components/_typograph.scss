@@ -1,0 +1,65 @@
+.profile {
+    display: flex;
+    height: 200px; 
+    width: 80%;
+    background-color: $main-content-color;
+    @extend %box-shadow;
+    @include media(tablet){
+        width: 50%;
+        float: right;
+    }
+    &-image {
+        max-width: 70%;
+        max-height: 80%;
+        border-radius: 50%;
+        margin: $auto;
+        transition: $trans;
+    }
+}
+
+.bio {
+    max-width: 80%;
+    @include media(tablet) {
+        text-align: left;
+        width: 50%;
+        padding-right: $sm-font;
+    }
+    & p {
+        @include font-fam-size ($md-font,$main-font,$font-w,$text-black);
+        @include media(laptop) {
+            width: 90%;
+        }
+    }
+}
+
+header {
+  h1{
+    @include font-fam-size (2.5em,$h-font,bold,$head-color,$text-shadow);
+    
+  }
+
+}
+
+h2 {
+    @include font-fam-size (1.6em,$main-font,$font-w,$text-black,$text-shadow);
+}
+
+
+
+.contact p {
+    color:$text-black;
+    margin: 10px 0;
+    width: 90%;
+    @include media(tablet) {
+        width: 60%;
+    }
+}
+
+#portfolio,
+#skills {
+    @include font-fam-size ($lg-font,$main-font,bold,$text-black,$text-shadow);
+    padding-bottom: $sm-font;
+    
+}
+
+
