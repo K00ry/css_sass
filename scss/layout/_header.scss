@@ -27,7 +27,7 @@ nav{
             @include media (tablet){
             margin-right: 15px;
             width: 300px;
-            transition: all .5s;
+            transition: $trans;
             }
             &:hover{
               text-shadow: $text-shadow;

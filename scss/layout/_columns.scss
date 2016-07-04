@@ -1,10 +1,8 @@
 .main-content {
-    @include flex-display(flex, column, $width: $full, $max-width: 1150px);
-    align-items: center;
+    @include flex-display(flex, column, $width: $full, $max-width: 1150px,$align:center);
     padding: 40px 0;
     background-color: $main-content-color;
     @extend %box-shadow;
-
     @include media(laptop){
         width: 90%;
         margin: $auto;
